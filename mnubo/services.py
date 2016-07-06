@@ -108,13 +108,13 @@ class SearchServices(object):
 
         return self.api_manager.post('search/basic', query)
 
-    def search_datasets(self, query):
+    def search_datasets(self):
         """ Sends a search query on the dataset list
 
         :param query: the query in json
         """
 
-        return self.api_manager.get('search/datasets', query)
+        return self.api_manager.get('search/datasets')
 
 
 class BatchServices(object):
